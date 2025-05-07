@@ -5,402 +5,128 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Cards of Cthulhu - Lovecraftian Mobile Game</title>
-  <meta name="description" content="Descend into the depths of cosmic horror in this Lovecraftian mobile game inspired by H.P. Lovecraft's works. Download now and face the unfathomable.">
-  <meta name="keywords" content="lovecraft, mobile game, horror game, eldritch, cosmic horror, cthulhu">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Dewi
-  * Template URL: https://bootstrapmade.com/dewi-free-multi-purpose-html-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
-<body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename eldritch-glow">Cards of Cthulhu</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
+<body>
+  <!-- Header -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="Cards of Cthulhu"></a>
+      <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#download">Download</a></li>
-          <li><a href="#team">Team</a></li>
+          <li><a class="nav-link active" href="#hero">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#features">Features</a></li>
+          <li><a class="nav-link" href="#download">Download</a></li>
+          <li><a class="nav-link" href="#team">Team</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
-
-      <a class="cta-btn" href="#download">Download Now</a>
-
     </div>
   </header>
 
-  <main class="main">
+  <!-- Hero Section -->
+  <section id="hero" class="d-flex align-items-center justify-content-center" style="background: url('assets/img/chulhu.jpg') no-repeat center center; background-size: cover; height: 100vh;">
+    <div class="container text-center">
+      <h1 class="eldritch-glow">Cards of Cthulhu</h1>
+      <p>Descend into the abyss where ancient cosmic horrors await.</p>
+      <a href="#download" class="btn-get-started">Download Now</a>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background" style="padding-top: 120px; padding-bottom: 120px;">
-
-      <img src="assets/img/chulhu.jpg" alt="" data-aos="fade-in">
-
-      <div class="container">
-        <div class="row justify-content-center text-center">
-          <div class="col-lg-10">
-            <h2 data-aos="fade-up" class="eldritch-glow" style="font-size: 5rem; margin-bottom: 2.5rem; text-shadow: 0 0 20px rgba(0, 255, 157, 0.7); letter-spacing: 3px;">CARDS OF CTHULHU</h2>
-            <p data-aos="fade-up" data-aos-delay="200" style="font-size: 1.5rem; margin-bottom: 3rem; color: #eee;">Descend into the abyss where ancient cosmic horrors await.</p>
-            <div class="d-flex justify-content-center mt-5" data-aos="fade-up" data-aos-delay="300">
-              <a href="#download" class="btn-get-started pulse-animation" style="padding: 15px 40px; font-size: 1.3rem; letter-spacing: 1px;">Install Now</a>
-            </div>
-          </div>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>About</h2>
+        <p>The Ancient Horror</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="assets/img/example.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0 content">
+          <h3>The Ancient Ones Have Awakened</h3>
+          <p>"That is not dead which can eternal lie, and with strange aeons even death may die."</p>
+          <ul>
+            <li><i class="bi bi-check-circle"></i> Lovecraftian based rogue-like Card Game</li>
+            <li><i class="bi bi-check-circle"></i> Atmospheric and theme heavy visuals</li>
+            <li><i class="bi bi-check-circle"></i> Card system that affects gameplay</li>
+          </ul>
         </div>
       </div>
+    </div>
+  </section>
 
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section eldritch-border" style="padding-top: 7rem; padding-bottom: 7rem;">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2 style="font-size: 3rem; margin-bottom: 1rem;">About</h2>
-        <p class="eldritch-glow" style="font-size: 1.4rem; letter-spacing: 2px;">THE ANCIENT HORROR</p>
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="container">
+      <div class="section-title">
+        <h2>Features</h2>
+        <p>Arcane Mechanisms of Fate</p>
       </div>
-
-      <div class="container" style="margin-top: 4rem;">
-        <div class="row gy-5 align-items-center">
-          <!-- Left Column - Image -->
-          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="100">
-            <div class="position-relative" style="margin-bottom: 2rem;">
-              <img src="assets/img/example.jpg" class="img-fluid rounded-4" alt="" style="border: 2px solid #00aa6c; box-shadow: 0 0 20px rgba(0, 255, 157, 0.3);">
-              <div style="position: absolute; top: -15px; right: -15px; width: 80px; height: 80px; background: rgba(0,0,0,0.6); border: 2px solid #00aa6c; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                <i class="bi bi-eye text-white" style="font-size: 2.5rem; text-shadow: 0 0 10px #00aa6c;"></i>
-              </div>
-            </div>
-            
-            <div class="position-relative">
-              <img src="assets/img/monster.jpg" class="img-fluid rounded-4" alt="" style="border: 2px solid #00aa6c; box-shadow: 0 0 20px rgba(0, 255, 157, 0.3);">
-            </div>
-          </div>
-          
-          <!-- Right Column - Content -->
-          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="150">
-            <div class="content ps-lg-4">
-              <h3 class="eldritch-glow mb-4" style="font-size: 2.5rem;">The Ancient Ones Have Awakened</h3>
-              
-              <p class="fst-italic mb-4" style="font-size: 1.1rem; color: #00aa6c;">
-                "That is not dead which can eternal lie, and with strange aeons even death may die."
-              </p>
-              
-              <p style="text-align: justify; font-size: 1.05rem; margin-bottom: 2rem;">
-                In the dark depths of the ocean, something stirs. The ancient city of Cthulhu has risen, and with it, cosmic horrors beyond human comprehension. As an investigator driven by haunting visions, you must navigate a world on the brink of madness.
-              </p>
-              
-              <p style="text-align: justify; font-size: 1.05rem; margin-bottom: 2rem;">
-                Uncover eldritch truths as you solve intricate puzzles, navigate treacherous environments, and maintain your sanity while facing beings from beyond the stars. Every decision affects your fate and the world's.
-              </p>
-              
-              <ul class="features-list" style="list-style: none; padding-left: 0.5rem; margin-top: 2rem;">
-                <li style="margin-bottom: 1.2rem;"><i class="bi bi-check-circle-fill" style="color: #00aa6c; margin-right: 0.5rem;"></i> <span>Lovecraftian based rogue-like Card Game</span></li>
-                <li style="margin-bottom: 1.2rem;"><i class="bi bi-check-circle-fill" style="color: #00aa6c; margin-right: 0.5rem;"></i> <span>Atmospheric and theme heavy visuals</span></li>
-                <li style="margin-bottom: 1.2rem;"><i class="bi bi-check-circle-fill" style="color: #00aa6c; margin-right: 0.5rem;"></i> <span>Card system that affects gameplay</span></li>
-              </ul>
-            </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="feature-box">
+            <img src="assets/img/card-damage.png" class="img-fluid" alt="Damage Card">
+            <h4>Cards of Affliction</h4>
+            <p>Manifest cosmic horrors to assault your opponent's sanity.</p>
           </div>
         </div>
-      </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Features Section -->
-    <section id="features" class="features section eldritch-border" style="padding-top: 7rem; padding-bottom: 8rem; margin-top: 2rem;">
-
-      <div class="container">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2 style="font-size: 3.2rem; margin-bottom: 1.2rem;">Gameplay</h2>
-          <p class="eldritch-glow" style="font-size: 1.5rem; letter-spacing: 3px;">ARCANE MECHANISMS OF FATE</p>
-        </div><!-- End Section Title -->
-
-        <div class="row align-items-center">
-          <!-- Left Side - Description Content -->
-          <div class="col-lg-5 order-lg-1 order-2" data-aos="fade-right" data-aos-delay="150">
-            <h3 class="eldritch-glow mb-4">The Eldritch Card System</h3>
-            <p class="fst-italic mb-4">
-              "The most merciful thing in the world, I think, is the inability of the human mind to correlate all its contents."
-            </p>
-            
-            <p>
-              In <span class="eldritch-glow">Through the Cards of Cthulhu</span>, destiny is woven through an ancient card system that bridges our world and the cosmic beyond. Each turn, you receive three cards from the Void, each housing powers to <strong>harm</strong>, <strong>heal</strong>, or channel <strong>arcane magick</strong>.
-            </p>
-            
-            <div class="card-explanation mt-4 mb-4">
-              <h4><i class="bi bi-droplet-half text-danger me-2"></i>Cards of Affliction</h4>
-              <p>Manifest cosmic horrors to assault your opponent's sanity and physical form.</p>
-              
-              <h4><i class="bi bi-heart-pulse text-success me-2"></i>Cards of Preservation</h4>
-              <p>Invoke ancient rituals that mend wounds and temporarily shield your sanity.</p>
-              
-              <h4><i class="bi bi-stars text-primary me-2"></i>Cards of Eldritch Magick</h4>
-              <p>Command powers beyond mortal comprehension, manipulating reality itself.</p>
-            </div>
-            
-            <p class="fst-italic mt-4">
-              "That which is not dead can eternal lie, and with strange aeons, even death may die."
-            </p>
-          </div>
-          
-          <!-- Right Side - Cards Display -->
-          <div class="col-lg-7 order-lg-2 order-1 text-center" data-aos="fade-left" data-aos-delay="100">
-            <div class="card-display" style="position: relative; margin: 3rem 0;">
-              <div class="row justify-content-center">
-                <!-- Damage Card -->
-                <div class="col-md-4">
-                  <div class="card-item mb-4" style="background: #121212; border: 2px solid #00aa6c; border-radius: 12px; height: 180px; position: relative; box-shadow: 0 0 20px rgba(0, 255, 157, 0.3); overflow: hidden;">
-                    <div style="width: 92%; height: 92%; margin: 7px auto; position: relative; overflow: hidden;">
-                      <img src="assets/img/card-damage.png" alt="Damage Card" style="width: 100%; height: 100%; object-fit: contain;">
-                    </div>
-                    <div style="position: absolute; top: 8px; left: 8px; font-size: 24px;"><i class="bi bi-droplet-half text-danger"></i></div>
-                    <div style="position: absolute; bottom: 8px; right: 12px; font-size: 28px;">Γ</div>
-                  </div>
-                </div>
-                
-                <!-- Healing Card -->
-                <div class="col-md-4">
-                  <div class="card-item mb-4 pulse-animation" style="background: #121212; border: 2px solid #00aa6c; border-radius: 12px; height: 180px; position: relative; z-index: 2; box-shadow: 0 0 30px rgba(0, 255, 157, 0.8); overflow: hidden;">
-                    <div style="width: 92%; height: 92%; margin: 7px auto; position: relative; overflow: hidden;">
-                      <img src="assets/img/card-heal.png" alt="Healing Card" style="width: 100%; height: 100%; object-fit: contain;">
-                    </div>
-                    <div style="position: absolute; top: 8px; left: 8px; font-size: 24px;"><i class="bi bi-heart-pulse text-success"></i></div>
-                    <div style="position: absolute; bottom: 8px; right: 12px; font-size: 28px;">Δ</div>
-                  </div>
-                </div>
-                
-                <!-- Magic Card -->
-                <div class="col-md-4">
-                  <div class="card-item mb-4" style="background: #121212; border: 2px solid #00aa6c; border-radius: 12px; height: 180px; position: relative; box-shadow: 0 0 20px rgba(0, 255, 157, 0.3); overflow: hidden;">
-                    <div style="width: 92%; height: 92%; margin: 7px auto; position: relative; overflow: hidden;">
-                      <img src="assets/img/card-magic.png" alt="Magic Card" style="width: 100%; height: 100%; object-fit: contain;">
-                    </div>
-                    <div style="position: absolute; top: 8px; left: 8px; font-size: 24px;"><i class="bi bi-stars text-primary"></i></div>
-                    <div style="position: absolute; bottom: 8px; right: 12px; font-size: 28px;">Ω</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="col-lg-4">
+          <div class="feature-box">
+            <img src="assets/img/card-heal.png" class="img-fluid" alt="Healing Card">
+            <h4>Cards of Preservation</h4>
+            <p>Invoke rituals that mend wounds and shield sanity.</p>
           </div>
         </div>
-
-      </div>
-
-    </section><!-- /Features Section -->
-
-    <!-- Download Section -->
-    <section id="download" class="contact section" style="padding-top: 7rem; padding-bottom: 8rem; margin-top: 2rem;">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2 style="font-size: 3.5rem; margin-bottom: 1.5rem;">Download</h2>
-        <p class="eldritch-glow" style="font-size: 1.6rem; letter-spacing: 3px; text-shadow: 0 0 15px rgba(0, 255, 157, 0.6);">ENTER THE NIGHTMARE</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 justify-content-center">
-          <!-- Download Section -->
-          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="150">
-            <div class="info-item eldritch-border" style="padding: 3rem 2rem;">
-              <h3 class="mb-4 text-center" style="font-size: 2.2rem;">Download The Call of Cthulhu</h3>
-              <p class="mb-4 text-center" style="font-size: 1.1rem;">Take the first step into madness. Download the BETA version for Android devices now.</p>
-              <p class="mb-4 text-center" style="color: #00aa6c;">Version 1.0.0 | 100MB | Android 8.0+</p>
-              <div class="text-center">
-                <a href="assets/downloads/cards-of-cthulhu.apk" class="download-btn pulse-animation mb-3 d-inline-block" style="text-decoration: none; padding: 12px 30px; background: #00aa6c; color: white; border-radius: 5px; transition: all 0.3s ease;"><i class="bi bi-android2 me-2"></i>Download APK</a>
-                <br>
-                <a href="assets/downloads/game-manual.pdf" class="download-btn pulse-animation d-inline-block" style="text-decoration: none; padding: 12px 30px; background: #00aa6c; color: white; border-radius: 5px; transition: all 0.3s ease;"><i class="bi bi-file-earmark-pdf me-2"></i>Download Manual</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- System Requirements -->
-          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="250">
-            <div class="info-item" style="background: rgba(0,0,0,0.4); padding: 2.5rem; border-left: 3px solid #00aa6c;">
-              <h3 class="mb-4 text-center" style="font-size: 1.8rem; color: #00aa6c;">System Requirements</h3>
-              
-              <div class="d-flex mb-3 align-items-center">
-                <i class="bi bi-cpu color-blue flex-shrink-0 me-3" style="font-size: 1.5rem; color: #00aa6c;"></i>
-                <div>
-                  <h5>Processor</h5>
-                  <p>Quad-core 1.5 GHz or better</p>
-                </div>
-              </div>
-              
-              <div class="d-flex mb-3 align-items-center">
-                <i class="bi bi-memory color-orange flex-shrink-0 me-3" style="font-size: 1.5rem; color: #00aa6c;"></i>
-                <div>
-                  <h5>RAM</h5>
-                  <p>4 GB minimum</p>
-                </div>
-              </div>
-              
-              <div class="d-flex mb-3 align-items-center">
-                <i class="bi bi-hdd color-green flex-shrink-0 me-3" style="font-size: 1.5rem; color: #00aa6c;"></i>
-                <div>
-                  <h5>Storage</h5>
-                  <p>At least 100 MB free space</p>
-                </div>
-              </div>
-              
-              <div class="d-flex mb-3 align-items-center">
-                <i class="bi bi-android2 color-pink flex-shrink-0 me-3" style="font-size: 1.5rem; color: #00aa6c;"></i>
-                <div>
-                  <h5>Android Version</h5>
-                  <p>Android 8.0 (Oreo) or higher</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Download Section -->
-
-    <!-- Team Section -->
-    <section id="team" class="section eldritch-border" style="padding: 6rem 0;">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2 style="font-size: 3rem; margin-bottom: 1.5rem;">Our Team</h2>
-        <p class="eldritch-glow" style="font-size: 1.5rem; letter-spacing: 2px;">APP DEV PROJECT</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 mb-5">
-            <div class="team-card" style="background: rgba(0,0,0,0.5); border-left: 4px solid #00aa6c; padding: 3rem; border-radius: 8px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);">
-              <div class="text-center mb-5">
-                <h3 style="font-size: 2.5rem; color: #fff; margin-bottom: 2rem;">Project Team</h3>
-                <p style="font-size: 1.2rem; color: #00aa6c; font-style: italic;">The minds behind the madness</p>
-              </div>
-              
-              <div class="team-members">
-                <!-- Project Manager -->
-                <div class="team-member d-flex align-items-start mb-5" data-aos="fade-up" data-aos-delay="150">
-                  <div class="team-icon me-4" style="min-width: 70px; height: 70px; background: rgba(0,170,108,0.2); border: 2px solid #00aa6c; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                    <i class="bi bi-person-workspace" style="font-size: 2rem; color: #00aa6c;"></i>
-                  </div>
-                  <div class="team-info">
-                    <h4 style="font-size: 1.8rem; margin-bottom: 0.5rem; color: #fff;">Luiggie Lucenta</h4>
-                    <p style="font-size: 1.3rem; color: #00aa6c; margin-bottom: 0.8rem;">Project Manager</p>
-                    <p style="font-size: 1.1rem; color: #aaa;">Responsible for overseeing the project direction and coordinating team efforts.</p>
-                  </div>
-                </div>
-                
-                <!-- Lead Developer -->
-                <div class="team-member d-flex align-items-start mb-5" data-aos="fade-up" data-aos-delay="200">
-                  <div class="team-icon me-4" style="min-width: 70px; height: 70px; background: rgba(0,170,108,0.2); border: 2px solid #00aa6c; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                    <i class="bi bi-code-square" style="font-size: 2rem; color: #00aa6c;"></i>
-                  </div>
-                  <div class="team-info">
-                    <h4 style="font-size: 1.8rem; margin-bottom: 0.5rem; color: #fff;">Jeter Giambi Melendez</h4>
-                    <p style="font-size: 1.3rem; color: #00aa6c; margin-bottom: 0.8rem;">Lead Developer</p>
-                    <p style="font-size: 1.1rem; color: #aaa;">Leads the development efforts and implements core functionality.</p>
-                  </div>
-                </div>
-                
-                <!-- QA & Documentation Specialist -->
-                <div class="team-member d-flex align-items-start" data-aos="fade-up" data-aos-delay="250">
-                  <div class="team-icon me-4" style="min-width: 70px; height: 70px; background: rgba(0,170,108,0.2); border: 2px solid #00aa6c; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                    <i class="bi bi-clipboard-check" style="font-size: 2rem; color: #00aa6c;"></i>
-                  </div>
-                  <div class="team-info">
-                    <h4 style="font-size: 1.8rem; margin-bottom: 0.5rem; color: #fff;">John Winchel Valdez</h4>
-                    <p style="font-size: 1.3rem; color: #00aa6c; margin-bottom: 0.8rem;">Quality Assurance & Documentation Specialist</p>
-                    <p style="font-size: 1.1rem; color: #aaa;">Ensures quality standards and maintains comprehensive project documentation.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- /Team Section -->
-
-  </main>
-
-  <footer id="footer" class="footer dark-background">
-
-    <div class="container footer-top">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 footer-about text-center">
-          <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-            <span class="sitename eldritch-glow" style="font-size: 2.5rem;">The Call of Cthulhu</span>
-          </a>
-          <div class="footer-contact pt-4" style="font-size: 1.2rem;">
-            <p class="mb-4">@2025 Application Development and Emerging Technologies T43</p>
-            <p class="mb-3"><strong>Contact:</strong> <span>2201104863@student.buksu.edu.ph</span></p>
-          </div>
-          <div class="social-links d-flex justify-content-center mt-4" style="font-size: 1.5rem;">
-            <a href="" class="mx-3"><i class="bi bi-twitter-x"></i></a>
-            <a href="" class="mx-3"><i class="bi bi-facebook"></i></a>
-            <a href="" class="mx-3"><i class="bi bi-instagram"></i></a>
-            <a href="" class="mx-3"><i class="bi bi-discord"></i></a>
+        <div class="col-lg-4">
+          <div class="feature-box">
+            <img src="assets/img/card-magic.png" class="img-fluid" alt="Magic Card">
+            <h4>Cards of Eldritch Magick</h4>
+            <p>Command powers beyond mortal comprehension.</p>
           </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="container copyright text-center mt-5">
-      <p style="font-size: 1.1rem;">© <span>Copyright</span> <strong class="px-1 sitename">EMC-DAT 3A</strong></p>
-      <div class="credits" style="font-size: 1rem;">
-        <span>The Call of Cthulhu is a work of fiction inspired by the cosmic horror writings of H.P. Lovecraft</span>
+  <!-- Download Section -->
+  <section id="download" class="download">
+    <div class="container text-center">
+      <h2>Download</h2>
+      <p>Enter the Nightmare</p>
+      <a href="assets/downloads/cards-of-cthulhu.apk" class="btn btn-primary">Download APK</a>
+      <a href="assets/downloads/game-manual.pdf" class="btn btn-secondary">View Manual</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h3>Cards of Cthulhu</h3>
+          <p>Inspired by the cosmic horror writings of H.P. Lovecraft.</p>
+        </div>
+        <div class="col-lg-6 text-lg-end">
+          <ul class="social-links">
+            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="#"><i class="bi bi-discord"></i></a></li>
+          </ul>
+        </div>
       </div>
     </div>
-
   </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center pulse-animation"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
