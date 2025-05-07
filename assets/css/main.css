@@ -10,6 +10,13 @@
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
+
+img {
+  max-width: 100%;
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover; /* Optional: Ensures the image fits within dimensions */
+}
+
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
