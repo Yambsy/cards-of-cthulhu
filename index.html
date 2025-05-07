@@ -8,18 +8,156 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Special+Elite&display=swap" rel="stylesheet">
   <style>
-    .card-image {
-      width: 200px !important;
-      height: 280px !important;
-      object-fit: contain;
-      max-width: 100%;
-      margin: 0 auto;
-      display: block;
+    :root {
+      --heading-font: 'Special Elite', cursive;
+      --body-font: 'Crimson Text', serif;
     }
+    
+    /* Navigation Styles */
+    #navbar {
+      display: flex;
+      align-items: center;
+    }
+
+    #navbar ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      gap: 30px;
+    }
+
+    #navbar .nav-link {
+      color: #c5c5c5;
+      font-size: 1.1rem;
+      padding: 10px 0;
+      position: relative;
+      transition: 0.3s;
+    }
+
+    #navbar .nav-link:hover,
+    #navbar .nav-link.active {
+      color: #00ff9d;
+    }
+
+    #navbar .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #00ff9d;
+      transition: 0.3s;
+    }
+
+    #navbar .nav-link:hover::after,
+    #navbar .nav-link.active::after {
+      width: 100%;
+    }
+
+    .mobile-nav-toggle {
+      display: none;
+    }
+
+    @media (max-width: 991px) {
+      .mobile-nav-toggle {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+        color: #c5c5c5;
+      }
+
+      #navbar ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(10, 10, 10, 0.95);
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      #navbar.mobile-nav-active ul {
+        display: flex;
+      }
+    }
+
+    body {
+      font-family: var(--body-font);
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--heading-font);
+      letter-spacing: 1px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
     .feature-box {
+      background: rgba(18, 18, 18, 0.7);
+      border: 1px solid rgba(0, 170, 108, 0.2);
+      border-radius: 8px;
+      padding: 30px;
+      margin: 20px 0;
       text-align: center;
-      padding: 20px;
+      transition: 0.3s;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 255, 157, 0.2);
+    }
+
+    .feature-box h4 {
+      color: #00ff9d;
+      margin: 20px 0;
+      font-family: var(--heading-font);
+    }
+
+    .feature-box p {
+      color: #c5c5c5;
+      font-family: var(--body-font);
+      font-style: italic;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-title p {
+      font-family: var(--heading-font);
+      letter-spacing: 2px;
+    }
+
+    .about .content ul li {
+      font-family: var(--body-font);
+      font-style: italic;
+    }
+
+    .download-btn {
+      font-family: var(--heading-font);
+      letter-spacing: 1px;
+    }
+
+    .footer h3, .footer h4 {
+      font-family: var(--heading-font);
+      letter-spacing: 1px;
+    }
+
+    .footer p {
+      font-family: var(--body-font);
+      font-style: italic;
     }
   </style>
 </head>
@@ -28,14 +166,13 @@
   <!-- Header -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="Cards of Cthulhu"></a>
+      <h1 class="logo"><a href="index.html">Cards of Cthulhu</a></h1>
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link active" href="#hero">Home</a></li>
           <li><a class="nav-link" href="#about">About</a></li>
           <li><a class="nav-link" href="#features">Features</a></li>
           <li><a class="nav-link" href="#download">Download</a></li>
-          <li><a class="nav-link" href="#team">Team</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
@@ -52,7 +189,7 @@
   </section>
 
   <!-- About Section -->
-  <section id="about" class="about">
+  <section id="about" class="about section">
     <div class="container">
       <div class="section-title">
         <h2>About</h2>
@@ -64,11 +201,15 @@
         </div>
         <div class="col-lg-6 pt-4 pt-lg-0 content">
           <h3>The Ancient Ones Have Awakened</h3>
-          <p>"That is not dead which can eternal lie, and with strange aeons even death may die."</p>
+          <p class="fst-italic">"That is not dead which can eternal lie, and with strange aeons even death may die."</p>
+          <p>Inspired by the cosmic horror of H.P. Lovecraft and the strategic depth of games like Slay the Spire and Inscryption, Cards of Cthulhu brings you a unique blend of eldritch horror and tactical card combat.</p>
+          <p>Wield cards imbued with the power of the Old Ones, each one a fragment of cosmic knowledge that should not exist in our reality. Build your deck, master the forbidden arts, and face horrors beyond mortal comprehension.</p>
           <ul>
             <li><i class="bi bi-check-circle"></i> Lovecraftian based rogue-like Card Game</li>
             <li><i class="bi bi-check-circle"></i> Atmospheric and theme heavy visuals</li>
-            <li><i class="bi bi-check-circle"></i> Card system that affects gameplay</li>
+            <li><i class="bi bi-check-circle"></i> Strategic card-based gameplay</li>
+            <li><i class="bi bi-check-circle"></i> Procedurally generated encounters</li>
+            <li><i class="bi bi-check-circle"></i> Multiple paths through the nightmare</li>
           </ul>
         </div>
       </div>
@@ -76,7 +217,7 @@
   </section>
 
   <!-- Features Section -->
-  <section id="features" class="features">
+  <section id="features" class="features section">
     <div class="container">
       <div class="section-title">
         <h2>Features</h2>
@@ -85,23 +226,105 @@
       <div class="row">
         <div class="col-lg-4">
           <div class="feature-box">
-            <img src="assets/img/card-damage.PNG" class="img-fluid card-image" alt="Damage Card">
+            <i class="bi bi-suit-spade-fill" style="font-size: 48px; color: #00ff9d;"></i>
             <h4>Cards of Affliction</h4>
-            <p>Manifest cosmic horrors to assault your opponent's sanity.</p>
+            <p>Manifest cosmic horrors to assault your opponent's sanity. Each card is a window into the void, bringing forth creatures and powers that defy mortal understanding.</p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="feature-box">
-            <img src="assets/img/card-heal.PNG" class="img-fluid card-image" alt="Healing Card">
+            <i class="bi bi-heart-fill" style="font-size: 48px; color: #00ff9d;"></i>
             <h4>Cards of Preservation</h4>
-            <p>Invoke rituals that mend wounds and shield sanity.</p>
+            <p>Invoke rituals that mend wounds and shield sanity. Ancient knowledge allows you to maintain your grip on reality while delving deeper into the abyss.</p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="feature-box">
-            <img src="assets/img/card-magic.PNG" class="img-fluid card-image" alt="Magic Card">
+            <i class="bi bi-stars" style="font-size: 48px; color: #00ff9d;"></i>
             <h4>Cards of Eldritch Magick</h4>
-            <p>Command powers beyond mortal comprehension.</p>
+            <p>Command powers beyond mortal comprehension. Each spell is a fragment of the Old Ones' knowledge, warping reality to your will.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-4">
+          <div class="feature-box">
+            <i class="bi bi-shield-fill" style="font-size: 48px; color: #00ff9d;"></i>
+            <h4>Diverse Enemies</h4>
+            <p>Face cultists, deep ones, and otherworldly entities, each with unique attack patterns and abilities. Learn their weaknesses or be consumed by the void.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="feature-box">
+            <i class="bi bi-controller" style="font-size: 48px; color: #00ff9d;"></i>
+            <h4>Retro Style</h4>
+            <p>Experience the horror through a lens of retro aesthetics, combining pixel art with modern effects to create an unsettling atmosphere that pays homage to classic horror games.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="feature-box">
+            <i class="bi bi-code-square" style="font-size: 48px; color: #00ff9d;"></i>
+            <h4>Built in Unity</h4>
+            <p>Developed using Unity, bringing smooth performance and modern features while maintaining the game's eldritch atmosphere and strategic depth.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="team section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Team</h2>
+        <p>The Cultists Behind the Madness</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="member">
+            <div class="pic">
+              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="member-info">
+              <h4>Jeter Giambi</h4>
+              <span>Lead Developer</span>
+              <div class="social">
+                <a href=""><i class="bi bi-github"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="member">
+            <div class="pic">
+              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="member-info">
+              <h4>Luiggie Lucenta</h4>
+              <span>Project Manager</span>
+              <div class="social">
+                <a href=""><i class="bi bi-github"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="member">
+            <div class="pic">
+              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="member-info">
+              <h4>John Winchel Valdez</h4>
+              <span>Quality Assurance</span>
+              <div class="social">
+                <a href=""><i class="bi bi-github"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -109,12 +332,12 @@
   </section>
 
   <!-- Download Section -->
-  <section id="download" class="download">
+  <section id="download" class="download section">
     <div class="container text-center">
       <h2>Download</h2>
       <p>Enter the Nightmare</p>
-      <a href="assets/downloads/cards-of-cthulhu.apk" class="btn btn-primary">Download APK</a>
-      <a href="assets/downloads/game-manual.pdf" class="btn btn-secondary">View Manual</a>
+      <a href="assets/downloads/cards-of-cthulhu.apk" class="btn btn-primary download-btn">Download APK</a>
+      <a href="assets/downloads/game-manual.pdf" class="btn btn-secondary download-btn">View Manual</a>
     </div>
   </section>
 
