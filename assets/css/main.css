@@ -10,7 +10,46 @@
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
+/* Horizontal Scrolling Layout */
+.horizontal-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    width: 100vw;
+    height: 100vh;
+}
 
+.section {
+    scroll-snap-align: start;
+    flex: 0 0 100%; /* Full viewport width for each section */
+    height: 100vh; /* Full viewport height */
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: var(--surface-color);
+}
+
+/* Increase Text Size */
+:root {
+    font-size: 18px; /* Increase base font size */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: calc(1.5rem + 1vw); /* Responsive heading size */
+}
+
+p, a, li {
+    font-size: 1.25rem; /* Larger text for readability */
+}
+
+/* Alternate Background for Sections */
+.section:nth-child(odd) {
+    background-color: var(--surface-color);
+}
+
+.section:nth-child(even) {
+    background-color: var(--background-color);
+}
 img {
   max-width: 100%;
   height: auto; /* Maintains aspect ratio */
